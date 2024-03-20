@@ -37,6 +37,12 @@ body > .info {
     align-items: center;
     flex-direction: row;
     margin-top: 40px;
+    gap: 40px;
+}
+@media (max-width: 999px) {
+    .parent {
+        flex-direction: column;
+    }
 }
 .box {
     position: relative;
@@ -62,14 +68,18 @@ body > .info {
 .parent > .box:last-child::before {
     background-color: #4780ad;
 }
+.two_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
 .two_box > .box:first-child::before {
     background-color: #fd5355;
 }
 .two_box > .box:last-child::before {
     background-color: #d1a157;
-}
-.two_box .box {
-    margin: 10px;
 }
 .box h3 {
     font-size: 20px;
