@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "poppins", open-sans;
+    background-color: #fafafa;
+}
+p {
+    font-size: 15px;
+    color: #50505c;
+}
+body > .info {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.info p {
+    text-align: center;
+    width: 540px;
+}
+.info h3 {
+    text-align: center;
+    font-size: 40px;
+    color: #50505c;
+    margin: 0;
+}
+.info h3:first-of-type {
+    font-weight: 200;
+}
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.box {
+    position: relative;
+    box-shadow: 5px 5px 18px rgb(0 0 0 / 10%);
+    padding: 20px;
+    padding-bottom: 110px;
+    background-color: white;
+    transform: scale(0.9);
+    margin: -5px;
+    border-radius: 10px;
+}
+.box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px 10px 0 0;
+}
+.parent > .box:first-child::before {
+    background-color: #45acab;
+}
+.parent > .box:last-child::before {
+    background-color: #4780ad;
+}
+.two_box > .box:first-child::before {
+    background-color: #fd5355;
+}
+.two_box > .box:last-child::before {
+    background-color: #d1a157;
+}
+.two_box .box {
+    margin: 10px;
+}
+.box h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.box p {
+    width: 340px;
+}
+img {
+    margin-top: 60px;
+    margin-left: 0;
+    margin-right: 40px;
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
